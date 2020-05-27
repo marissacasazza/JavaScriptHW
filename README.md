@@ -2,9 +2,7 @@
 
 Level 1: Automatic Table and Date Search <BR>
 <CODE>
-// from data.js
-
-// YOUR CODE HERE!
+//from data.js
 //Assigning the data to a variable
 var tableData = data; 
 function datatable(arr){ 
@@ -17,20 +15,18 @@ function datatable(arr){
             ) 
         }); 
     } 
-    datatable(tableData)
-
-// Creating the click event
+    datatable(tableData)</CODE>
+<CODE>// Creating the click event
 const filterButton = d3.select("#filter-btn")
 filterButton.on("click", myFilter)
-
-function myFilter() {
+    </CODE>
+<CODE>function myFilter() {
   var userInput = d3.select("#datetime").property("value")
   //console.log(userInput)
   var filterData = tableData.filter(row => row.datetime === userInput);
  // console.log(filterData)
  datatable(filterData)
 }
-
 )</CODE>
 
 
